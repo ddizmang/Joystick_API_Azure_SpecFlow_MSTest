@@ -1,1 +1,3 @@
-Readme added
+Please see the Tests/BDD/Features/APIFramework/APIFramework_Examples.feature file for examples.
+
+More documentation coming...
