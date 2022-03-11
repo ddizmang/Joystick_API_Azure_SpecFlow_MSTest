@@ -234,37 +234,37 @@ this.ScenarioInitialize(scenarioInfo);
 #line 25
  testRunner.And("var %homePlanet% as Tatooine type string", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 28
- testRunner.Given("api url http://localhost:8181", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 27
+ testRunner.Given("api url https://swapi.dev/api", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 29
+#line 28
  testRunner.And("path people", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 30
+#line 29
  testRunner.And("path %id%", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 31
+#line 30
  testRunner.When("method GET", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 32
+#line 31
  testRunner.Then("assert json response name is equal to %name%", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 33
+#line 32
  testRunner.And("assert json response gender is equal to male", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 35
+#line 34
  testRunner.Given("var %planetUrl% is equal to response.homeworld type string", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 37
+#line 36
  testRunner.Given("api url %planetUrl%", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 38
+#line 37
  testRunner.When("method GET", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 39
+#line 38
  testRunner.Then("assert api response status is equal to 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 40
+#line 39
  testRunner.Then("assert json response name is equal to %homePlanet%", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -283,7 +283,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "NotWorking"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Bearer_Token_Documentation", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 44
+#line 43
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -303,37 +303,37 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 45
+#line 44
  testRunner.Given("api url https://api.twitter.com", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 46
+#line 45
  testRunner.And("header Authorization = Basic AADFDVSOUWERNDLLIKWEURHN", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 47
+#line 46
  testRunner.And("header Content-Type = application/x-www-form-urlencoded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 48
+#line 47
  testRunner.And("form content grant_type value client_credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 50
+#line 49
  testRunner.When("method POST", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 51
+#line 50
  testRunner.Then("assert api response status is equal to 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 54
+#line 53
  testRunner.Given("var %bearer% as respoonse.access_token type string", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 56
+#line 55
  testRunner.Given("api url https://api.twitter.com", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 57
+#line 56
  testRunner.And("header Authorization = Bearer %bearer%", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 58
+#line 57
  testRunner.When("method GET", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 59
+#line 58
  testRunner.Then("assert api response status is equal to 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -352,7 +352,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Working"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Swagger_Petshop_CRUD", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 62
+#line 61
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -372,102 +372,102 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 66
+#line 65
  testRunner.Given("api url https://petstore.swagger.io/v2/pet", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 67
+#line 66
  testRunner.And("path 1061", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 68
+#line 67
  testRunner.And("header Content-Type = application/json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 69
+#line 68
  testRunner.When("method DELETE", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 71
+#line 70
  testRunner.Given("api url https://petstore.swagger.io/v2/pet", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 72
+#line 71
  testRunner.And("request json { \'id\': 1061, \'category\': {\'id\': 0,  \'name\': \'string\' }, \'name\': \'te" +
                         "st pet\', \'photoUrls\': [ \'string\'], \'tags\': [   {    \'id\': 0,    \'name\': \'string\'" +
                         "   } ], \'status\': \'available\'}", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 73
+#line 72
  testRunner.And("header Content-Type = application/json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 74
+#line 73
  testRunner.When("method POST", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 75
+#line 74
  testRunner.Then("assert json response id is equal to 1061", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 76
+#line 75
  testRunner.Given("var %id% is equal to response.id type string", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 77
+#line 76
  testRunner.Then("print var %id% debug", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 79
+#line 78
  testRunner.Given("api url https://petstore.swagger.io/v2/pet", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 80
+#line 79
  testRunner.And("path %id%", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 81
+#line 80
  testRunner.And("header Content-Type = application/json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 82
+#line 81
  testRunner.When("method GET", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 83
+#line 82
  testRunner.Then("assert api response status is equal to 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 85
+#line 84
  testRunner.And("assert json response id is equal to %id%", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 87
+#line 86
  testRunner.Given("api url https://petstore.swagger.io/v2/pet", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 89
+#line 88
  testRunner.And("request read json file .\\\\Data\\\\JsonData\\\\ApiData\\\\Swagger\\\\JsonRequest\\\\PetShopT" +
                         "estData.json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 90
+#line 89
  testRunner.And("header Content-Type = application/json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 91
+#line 90
  testRunner.When("method PUT", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 92
+#line 91
  testRunner.Then("assert api response status is equal to 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 93
+#line 92
  testRunner.And("assert json response tags[0].id is equal to 1061", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 94
+#line 93
  testRunner.And("assert json response name is equal to doggie update", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 96
+#line 95
  testRunner.And("assert json response matches json file .\\\\Data\\\\JsonData\\\\ApiData\\\\Swagger\\\\JsonR" +
                         "esponse\\\\SwaggerPetstore_POST_pet_response.json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 98
+#line 97
  testRunner.And("assert json response matches schema file .\\\\Data\\\\JsonData\\\\ApiData\\\\Swagger\\\\Jso" +
                         "nSchemas\\\\SwaggerPetstore_POST_pet_schema.json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 100
+#line 99
  testRunner.Given("api url https://petstore.swagger.io/v2/pet", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 101
+#line 100
  testRunner.And("path 1061", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 102
+#line 101
  testRunner.And("header Content-Type = application/json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 103
+#line 102
  testRunner.When("method DELETE", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 104
+#line 103
  testRunner.Then("assert api response status is equal to 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -486,7 +486,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "Working"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Swagger_Petshop_CRUD_Failing_Contract_Example", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 107
+#line 106
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -506,86 +506,86 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 111
+#line 110
  testRunner.Given("api url https://petstore.swagger.io/v2/pet", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 112
+#line 111
  testRunner.And("path 1061", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 113
+#line 112
  testRunner.And("header Content-Type = application/json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 114
+#line 113
  testRunner.When("method DELETE", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 116
+#line 115
  testRunner.Given("api url https://petstore.swagger.io/v2/pet", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 117
+#line 116
  testRunner.And("request json { \'id\': 1061, \'category\': {\'id\': 0,  \'name\': \'string\' }, \'name\': \'te" +
                         "st pet\', \'photoUrls\': [ \'string\'], \'tags\': [   {    \'id\': 0,    \'name\': \'string\'" +
                         "   } ], \'status\': \'available\'}", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 118
+#line 117
  testRunner.And("header Content-Type = application/json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 119
+#line 118
  testRunner.When("method POST", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 120
+#line 119
  testRunner.Then("assert json response id is equal to 1061", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 121
+#line 120
  testRunner.Given("var %id% is equal to response.id type string", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 122
+#line 121
  testRunner.Then("print var %id% debug", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 124
+#line 123
  testRunner.Given("api url https://petstore.swagger.io/v2/pet", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 125
+#line 124
  testRunner.And("path %id%", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 126
+#line 125
  testRunner.And("header Content-Type = application/json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 127
+#line 126
  testRunner.When("method GET", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 128
+#line 127
  testRunner.Then("assert api response status is equal to 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 130
+#line 129
  testRunner.And("assert json response id is equal to %id%", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 132
+#line 131
  testRunner.Given("api url https://petstore.swagger.io/v2/pet", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 134
+#line 133
  testRunner.And("request read json file .\\\\Data\\\\JsonData\\\\ApiData\\\\Swagger\\\\JsonRequest\\\\PetShopT" +
                         "estData.json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 135
+#line 134
  testRunner.And("header Content-Type = application/json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 136
+#line 135
  testRunner.When("method PUT", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 137
+#line 136
  testRunner.Then("assert api response status is equal to 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 138
+#line 137
  testRunner.And("assert json response tags[0].id is equal to 1061", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 139
+#line 138
  testRunner.And("assert json response name is equal to doggie update", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 141
+#line 140
  testRunner.And("assert json response matches json file .\\\\Data\\\\JsonData\\\\ApiData\\\\Swagger\\\\JsonR" +
                         "esponse\\\\SwaggerPetstore_POST_pet_response.json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 143
+#line 142
  testRunner.And("assert json response matches schema file .\\\\Data\\\\JsonData\\\\ApiData\\\\Swagger\\\\Jso" +
                         "nSchemas\\\\SwaggerPetstore_POST_pet_schema_fail.json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
@@ -605,7 +605,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "NotWorking"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Date_Examples", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 148
+#line 147
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -625,22 +625,22 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 149
+#line 148
  testRunner.Given("var %timestamp% as now type date", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 152
+#line 151
  testRunner.And("format var %timestamp% as string MM-dd-yyyy", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 153
+#line 152
  testRunner.And("var %id% as 3fa85f64-5717-4562-b3fc-2c963f66afa6 type string", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 154
+#line 153
  testRunner.And(@"request json { ""Id"": ""%id%"", ""eventType"": ""string"", ""timestamp"": ""%timestamp%"", ""event"": ""string"", ""eventData"": [ { ""name"": ""string"", ""value"": ""string""} ], ""location"": { ""Id"": ""%id%"", ""timestamp"": ""%timestamp%"", ""latitude"": 0, ""longitude"": 0, ""accuracy"": 0, ""altitude"": 0, ""altitudeAccuracy"": 0, ""direction"": 0, ""speed"": 0, ""satellite"": 0, ""csq"": 0, ""address"": ""string"", ""fix"": 0, ""locationMode"": ""string"" } }", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 155
+#line 154
  testRunner.Then("print var %timestamp% debug", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 156
+#line 155
  testRunner.And("print var %id% debug", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -659,7 +659,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "NotWorking"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("SQL_Request_Example", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 160
+#line 159
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -679,22 +679,22 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 161
+#line 160
  testRunner.Given("var %key% as 218 type int", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 162
+#line 161
  testRunner.And("request sqlserver select top 1 *  from table with (nolock) where key = %key%", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 163
+#line 162
  testRunner.And("sqlserver connection string Data Source=SQL Server Connection string", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 164
+#line 163
  testRunner.When("method sqlserver", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 165
+#line 164
  testRunner.Then("assert json response sqlresult[0].key is equal to %key%", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 166
+#line 165
  testRunner.Then("print response debug", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

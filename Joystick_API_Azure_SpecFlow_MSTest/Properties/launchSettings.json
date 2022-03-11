@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Joystick_API_Azure_SpecFlow_MSTest": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

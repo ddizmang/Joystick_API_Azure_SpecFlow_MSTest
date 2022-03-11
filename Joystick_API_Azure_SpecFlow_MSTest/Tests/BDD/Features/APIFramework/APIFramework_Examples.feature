@@ -50,7 +50,7 @@ Scenario: Bearer_Token_Documentation
 	Then assert api response status is equal to 200
 	# SET %bearer% variable to access_token response
 	# example: {"token_type":"bearer","access_token":"AAAA%2FAAA%3DAAAAAAAA"}
-	Given var %bearer% as respoonse.access_token type string
+	Given var %bearer% as response.access_token type string
 	# SET the Authorization header to Bearer with the %bearer% variable
 	Given api url https://api.twitter.com
 	And header Authorization = Bearer %bearer%
